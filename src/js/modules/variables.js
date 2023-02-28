@@ -1,0 +1,10 @@
+export const API = 'https://api.chucknorris.io/jokes';
+export const categories = document.querySelector('#form-categories');
+export const heroForm = document.querySelector('.hero__form');
+export const inputCategory = document.querySelector('#form-category');
+export const formSearchBtn = document.querySelector('#form-search-btn');
+export const formSearch = document.querySelector('#form-search');
+export const mainJokesDiv = document.querySelector('.hero__jokes');
+export const menuBtn = document.querySelector('.burger');
+export const menu = document.querySelector('.header__right-menu');
+export const overlay = document.querySelector('.overlay');

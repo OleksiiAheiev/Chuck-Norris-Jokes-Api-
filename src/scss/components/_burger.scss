@@ -1,0 +1,40 @@
+@media all and (max-width: 991px) {
+    .header {
+        &__right {
+            &--burger {
+                z-index: 11;
+                background-color: var(--dark-color);
+                border-radius: 50%;
+                margin-right: 10px;
+
+                @include btn();
+
+                .icon {
+                    @include icon(0px, 51px);
+
+                    &:before {
+                        @include icon-before(2px, 14px, 0, 30px);
+                    }
+
+                    &:after {
+                        @include icon-after(2px, 14px, 10px, 30px);
+                    }
+                }
+
+                &.active {
+                    .icon {
+                        transition: 0.5s;
+
+                        &:before {
+                            transform: rotateZ(45deg) scaleX(1) translate(4px, 3px);
+                        }
+
+                        &:after {
+                            transform: rotateZ(-45deg) scaleX(1) translate(4px, -3px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

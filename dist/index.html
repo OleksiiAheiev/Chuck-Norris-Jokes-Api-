@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230228124045">
+    <title>Chuck Norris Jokes</title>
+</head>
+
+<body class="menu-opened">
+    <div class="wrapper" >
+        <header class="header">
+    <div class="header__container">
+        <div class="header__left">
+            <a class="header__left--logo" href="#">MSI 2020</a>
+        </div>
+
+        <div class="header__right">
+            <div class="header__right--burger burger">
+                <div class="icon"></div>
+            </div>
+            <span class="header__right--menu-name">Favourite</span>
+
+            <div class="header__right-menu"></div>
+        </div>
+    </div>
+</header>
+        <main class="page">
+    <div class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__left">
+                    <div class="hero__article">
+                        <h2 class="hero__article--title-h2">Hey!</h2>
+                        <h4 class="hero__article--title-h4">Let’s try to find a joke for you:</h4>
+                    </div>
+
+                    <form class="hero__form">
+                        <label>
+                            <input type="radio" name="jokeType" value="random" />
+                            Random
+                        </label>
+                        <label>
+                            <input id="form-category" type="radio" name="jokeType" value="category" />
+                            From categories
+                        </label>
+
+                        <div id="form-categories" class="hero__categories d-none"></div>
+
+                        <div class="hero__form-search">
+                            <label>
+                                <input id="form-search-btn" type="radio" name="jokeType" value="search" />
+                                Search
+                            </label>
+                            <input
+                                id="form-search"
+                                class="hero__form-search-input d-none"
+                                type="text"
+                                placeholder="Free text search..."
+                            />
+                        </div>
+                        <button class="hero__form-btn input-btn">Get a joke</button>
+                    </form>
+
+                    <div class="hero__jokes"></div>
+                </div>
+
+                <div class="hero__right">
+                    <h2 class="hero__right--title">Favourite</h2>
+                    <div class="hero__right-jokes"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="js/app.min.js?_v=20230228124045"></script>
+</body>
+
+</html>

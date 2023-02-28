@@ -1,0 +1,57 @@
+.input-btn {
+    border-radius: 10px;
+    border: none;
+    width: 152px;
+    height: 42px;
+    background-color: var(--btn-color);
+    color: var(--secondary-color);
+
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-m);
+    line-height: 22px;
+
+    &:hover {
+        background-color: var(--btn-color-hover);
+    }
+}
+
+// burger
+@mixin btn() {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    transition-duration: 0.5s;
+}
+
+@mixin icon($height, $width) {
+    transition-duration: 0.5s;
+    position: relative;
+    height: $height;
+    width: $width;
+    top: 8px;
+    background-color: var(--secondary-color);
+}
+
+@mixin icon-before($height, $width, $top, $right) {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: var(--secondary-color);
+    content: '';
+    top: $top;
+    right: $right;
+    border-radius: 1px;
+}
+
+@mixin icon-after($height, $width, $top, $right) {
+    transition-duration: 0.5s;
+    position: absolute;
+    width: $width;
+    height: $height;
+    background-color: var(--secondary-color);
+    content: '';
+    top: $top;
+    right: $right;
+    border-radius: 1px;
+}
